@@ -1,16 +1,9 @@
 :root {
+  --mainfont: antiquewhite;
 }
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  line-height: 1.5;
 }
 
 h1,
@@ -19,9 +12,118 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  font-family: "Syne", sans-serif;
 }
 
 p {
-  margin: 0;
+}
+
+/* BODY */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1f242c;
+  color: var(--mainfont);
+  line-height: 1.3;
+}
+/* HEADER STYLES*/
+
+/* nav bar */
+header {
+  position: fixed;
+}
+
+#hero-wrapper {
+  position: relative;
+}
+
+.nav-bar {
+  /*parent container of logo+nav-list*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: blue; */
+  height: 125px;
+  padding: 25px 25px;
+  width: 100vmax;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.logo h1 {
+  font-size: 300%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-list li a {
+  flex: 1;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--mainfont);
+}
+
+/* Hero grid heading/text  */
+
+.hero-banner {
+}
+
+.hero-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 1fr;
+  gap: 1;
+}
+
+.hero-line-1 {
+  background-color: black;
+}
+
+.hero-line-2 {
+  background-color: blueviolet;
+}
+
+.hero-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-divider svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 150px;
+}
+
+.hero-divider .shape-fill {
+  fill: #1f242c;
+}
+
+/* CONTENT STYLES*/
+
+/* hero banner */
+
+.hero-banner {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+  background-blend-mode: screen;
+}
+
+/* about me */
+
+/* contact me */
+
+/* footer styles */
+footer {
+  grid-area: footer;
 }
