@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@700"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
     />
     <link
       rel="stylesheet"
@@ -18,65 +18,185 @@
   </head>
 
   <body>
-    <!-- hero banner -->
-    <section class="hero-banner navigation page-section" id="hero-wrapper">
-      <header>
-        <!-- main logo / nav -->
-        <div class="nav-float">
-          <nav class="nav-bar">
-            <div class="logo">
-              <h1>KT.</h1>
+    <!-- main logo / navigation -->
+    <header id="navigation">
+      <div class="nav-float">
+        <nav class="nav-bar">
+          <div class="logo">
+            <h1>KT<span class="emph">!</span></h1>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#">about</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">contact</a></li>
+            <li>
+              <button class="cv-button"><a>CV</a></button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- side socials -->
+    <div class="side-socials">
+      <ul class="social-column">
+        <li class="social-box">
+          <img src="./assets/images/svg/github.svg" alt="github" />
+        </li>
+        <li class="social-box">
+          <img src="./assets/images/svg/linkedin.svg" alt="linkedin" />
+        </li>
+        <li class="social-box">
+          <img src="./assets/images/svg/dribbble.svg" alt="dribbble" />
+        </li>
+        <li class="social-box">
+          <img
+            src="./assets/images/svg/iconmonstr-behance-5.svg"
+            alt="behance"
+          />
+        </li>
+      </ul>
+    </div>
+    <!-- site flex -->
+    <div class="site-wrapper">
+      <!-- hero banner -->
+      <section class="hero-section" id="hero-wrapper">
+        <div class="hero-container-grid">
+          <div class="hero-container-flex">
+            <div class="hero-text-box">
+              <div class="hero-line-1">
+                <h2>hey there! i'm,</h2>
+              </div>
+              <div class="hero-line-2">
+                <h2>Kirsten<span class="emph">!</span></h2>
+              </div>
+              <div class="hero-desc">
+                <p>i'm a creative, aspiring frontend web developer.</p>
+              </div>
+              <div class="hero-button">
+                <button>contact me!</button>
+              </div>
             </div>
-            <ul class="nav-list">
-              <li><a href="#">about</a></li>
-              <li><a href="#">work</a></li>
-              <li><a href="#">contact</a></li>
-              <button id="cv-button"><a>CV</a></button>
-            </ul>
-          </nav>
+          </div>
+          <div class="hero-img">image</div>
+          <div class="hero-bottom">
+            <div class="hero-divider">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+          </div>
         </div>
-      </header>
-      <div class="hero-items">
-        <div class="hero-line-1"><h3>Hey there! I'm,</h3></div>
-        <h2 class="hero-line-2">Kirsten Tadique</h2>
-        <p class="hero-desc">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, cum
-          nihil?
-        </p>
-        <button id="hero-btn">Contact me!</button>
-        <div class="hero-image">image goes here</div>
-      </div>
-      <div class="hero-divider">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-    </section>
-
-    <main class="page-wrapper">
-      <!-- about me -->
-      <section class="page-section" id="about">
-        <h2>About Me</h2>
       </section>
 
-      <!-- portfolio container -->
-      <section class="page-section" id="work">
-        <h2>Work</h2>
-      </section>
+      <main id="content-grid">
+        <!-- about me -->
+        <section class="section-flex" id="about">
+          <header class="section-header"><h2>About Me</h2></header>
+          <p class="aboutmedesc">Hi! My name is Kirsten -</p>
+        </section>
 
-      <!-- contact -->
-      <section class="page-section contact" id="contact">
-        <h2>Contact Me</h2>
-      </section>
-    </main>
-    <footer>&copy; Kirsten T. 2022</footer>
+        <!-- portfolio container -->
+        <section class="section-flex" id="work">
+          <header class="section-header"><h2>Work</h2></header>
+          <p class="sectiondesc">
+            Here are some of my recent work, hover over to check them out!
+          </p>
+          <ul class="project-grid">
+            <li class="project">
+              <div class="project-card proj-1">
+                <header>
+                  <div class="card-top"></div>
+                  <h3 class="project-title">PROJECT</h3>
+                  <div class="project-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque alias omnis consequuntur dolore rerum officiis.
+                  </div>
+                </header>
+                <footer>HTML CSS</footer>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project-card proj-2">
+                <header>
+                  <div class="card-top"></div>
+                  <h3 class="project-title">PROJECT</h3>
+                  <p class="projectdesc"></p>
+                  <div class="project-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque alias omnis consequuntur dolore rerum officiis.
+                  </div>
+                </header>
+                <footer>HTML CSS</footer>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project-card proj-3">
+                <header>
+                  <div class="card-top"></div>
+                  <h3 class="project-title">PROJECT</h3>
+                  <div class="project-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque alias omnis consequuntur dolore rerum officiis.
+                  </div>
+                </header>
+                <footer>HTML CSS</footer>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project-card proj-4">
+                <header>
+                  <div class="card-top"></div>
+                  <h3 class="project-title">PROJECT</h3>
+                  <div class="project-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque alias omnis consequuntur dolore rerum officiis.
+                  </div>
+                </header>
+                <footer>HTML CSS</footer>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project-card proj-5">
+                <header>
+                  <div class="card-top"></div>
+                  <h3 class="project-title">PROJECT</h3>
+                  <div class="project-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque alias omnis consequuntur dolore rerum officiis.
+                  </div>
+                </header>
+                <footer>HTML CSS</footer>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project-card proj-6">
+                <header>
+                  <div class="card-top"></div>
+                  <h3 class="project-title">PROJECT</h3>
+                  <div class="project-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque alias omnis consequuntur dolore rerum officiis.
+                  </div>
+                </header>
+                <footer>HTML CSS</footer>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- contact -->
+        <section class="section-flex" id="contact">
+          <header class="section-header"><h2>Contact Me</h2></header>
+        </section>
+      </main>
+      <footer class="page-grid">&copy; Kirsten T. 2022</footer>
+    </div>
   </body>
 </html>
