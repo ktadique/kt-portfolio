@@ -41,7 +41,8 @@ body {
 
 .site-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
   /* 
   min-height: 100vh;
   display: grid;
@@ -85,6 +86,10 @@ body {
 .logo h1 {
   font-size: 300%;
 }
+.logo a {
+  text-decoration: none;
+  color: var(--white);
+}
 
 .nav-list {
   display: flex;
@@ -114,6 +119,10 @@ body {
   left: 40px;
 }
 
+.side-socials li {
+  padding: 10px;
+}
+
 .social-columns {
   display: flex;
   flex-direction: column;
@@ -129,7 +138,7 @@ body {
 } */
 
 .social-box {
-  background-color: black;
+  background-color: none;
   justify-content: center;
 }
 
@@ -137,7 +146,7 @@ body {
 
 /* hero section*/
 
-#hero-wrapper {
+.hero-wrapper {
   height: 100vh;
   background: linear-gradient(red, transparent),
     linear-gradient(to top left, lime, transparent),
@@ -215,6 +224,11 @@ body {
 #hero-wrapper {
   position: relative;
 }
+
+.hero-bottom {
+  position: bottom;
+}
+
 .hero-divider {
   position: absolute;
   bottom: 0;
@@ -237,13 +251,6 @@ body {
 
 #content-grid {
 }
-/* about me */
-#about {
-  height: 100vh;
-}
-
-/* projects*/
-
 .section-flex {
   display: flex;
   flex-direction: column;
@@ -252,17 +259,67 @@ body {
   padding: 50px 0px;
 }
 
+.section-header {
+  margin: 50px 150px;
+  align-self: flex-start;
+}
+/* about me */
+#about {
+  height: 125vh;
+  position: relative;
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 25px;
+  grid-template-areas: "desc img";
+}
+
+.aboutme-desc {
+  width: 500px;
+  padding: 50px;
+  background: linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+  background-blend-mode: screen;
+  border-radius: 25px;
+  box-sizing: border-box;
+  grid-area: desc;
+}
+
+.aboutme-desc p {
+  text-align: justify;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+.aboutme-img {
+  width: 500px;
+  background-color: black;
+  border-radius: 25px;
+  box-sizing: border-box;
+  grid-area: img;
+}
+
+.aboutme-img img {
+  width: auto;
+  height: 85%;
+}
+
+/* projects*/
+
 #work {
   height: 100%;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  margin: 0px 125px;
+  gap: 25px;
+  margin: 50px 125px;
 }
 
 .project-card {
@@ -272,9 +329,12 @@ body {
   height: 400px;
   width: 400px;
   padding: 25px;
-  background-color: burlywood;
+  background-color: #3b3b3b;
   border-radius: 25px;
   box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .proj-1 {
