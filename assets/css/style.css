@@ -332,6 +332,9 @@ body {
 }
 
 .aboutme-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 800px;
   padding: 50px;
 
@@ -550,4 +553,8 @@ footer {
   width: 100%;
 }
 
-@media;
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 800px;
+  }
+}
