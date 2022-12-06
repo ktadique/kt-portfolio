@@ -25,7 +25,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 h3 {
@@ -274,11 +275,6 @@ body {
   position: relative;
 }
 
-.hero-bottom {
-  position: bottom;
-  width: 100px;
-}
-
 .hero-divider {
   position: absolute;
   bottom: -25px;
@@ -509,10 +505,49 @@ body {
 
 /* contact me */
 #contact {
-  height: 50vh;
+  height: 25vh;
 }
 
-/* footer styles */
 footer {
   align-items: center;
 }
+
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.contact-box {
+  display: flex;
+  gap: 150px;
+}
+
+.contact-box a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.contact-box h2 {
+  position: relative;
+  font-weight: 700;
+}
+
+.contact-box h2:after {
+  content: "";
+  position: absolute;
+  background-color: var(--white);
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+  transition: 0.3s;
+}
+
+.contact-box h2:hover:after {
+  width: 100%;
+}
+
+@media;
