@@ -1,5 +1,6 @@
 :root {
-  --white: antiquewhite;
+  --bg: #1f242c;
+  --white: #faebd7;
 }
 
 * {
@@ -23,7 +24,12 @@ h2 {
   font-size: 2em;
 }
 
+h3 {
+  font-size: 1.5em;
+}
+
 p {
+  font-family: "Inter", sans-serif;
 }
 
 .emph {
@@ -34,7 +40,7 @@ p {
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #1f242c;
+  background-color: var(--bg);
   color: var(--white);
   line-height: 1.3;
 }
@@ -94,6 +100,7 @@ body {
 .nav-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   margin-right: 20px;
 }
@@ -105,9 +112,22 @@ body {
   color: var(--white);
 }
 
-.cv-button {
+.button {
   width: 5rem;
   font-weight: 700;
+  font-size: 30px;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: ;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* SOCIAL BAR */
@@ -121,6 +141,11 @@ body {
 
 .side-socials li {
   padding: 10px;
+}
+
+.side-socials a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 .social-columns {
@@ -158,42 +183,42 @@ body {
 
 .hero-container-grid {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  /* gap: 50px; */
-  justify-content: center;
-  align-items: center;
-  padding: 0 100px;
+  /* display: grid;
+  grid-template-columns: 2fr 1fr;
+  */
 
   /* 
   display: grid;
   grid-template-columns: 100%; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  /* gap: 50px; */
 }
 
 .hero-container-flex {
   display: flex;
   flex-direction: column;
-  /* margin-top: 250px; 
-  margin-left: 150px;
-  margin-right: 150px;*/
-  gap: 1;
-  /* background-color: #1f242c2a;
-  border: solid 5px; */
+  margin-right: 300px;
+  margin-bottom: 50px;
+  gap: -100px;
 }
+
 .hero-text-box {
-  flex-basis: 100px;
-  background-color: linear-gradient(--white, transparent);
   padding: 20px;
-  border-radius: 50%;
+}
+
+.hero-line-1 {
 }
 
 .hero-line-1 h3 {
-  font-size: 25px;
+  font-size: 28px;
   letter-spacing: 2px;
 }
 
 .hero-line-2 {
-  max-width: 450px;
   text-decoration-line: underline;
   text-decoration-style: double;
   text-decoration-thickness: 8px;
@@ -203,19 +228,26 @@ body {
   font-size: 125px;
   font-weight: 700;
 }
+
 .hero-line-2 em {
   font-style: italic;
 }
 
 .hero-desc {
   flex-wrap: wrap;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.3;
 }
 
-.hero-button {
-  font-weight: 200;
+.hero-button button {
   margin-top: 50px;
+  width: auto;
+  height: auto;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 26px;
+  padding: 20px;
+  border-radius: 50px;
 }
 .hero-img {
   margin-top: 250px;
@@ -227,13 +259,15 @@ body {
 
 .hero-bottom {
   position: bottom;
+  width: 100px;
 }
 
 .hero-divider {
   position: absolute;
-  bottom: 0;
+  bottom: -25px;
   left: 0;
   width: 100%;
+  height: auto;
   overflow: hidden;
   line-height: 0;
 }
@@ -265,7 +299,7 @@ body {
 }
 /* about me */
 #about {
-  height: 125vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -290,13 +324,13 @@ body {
 }
 
 .aboutme-desc p {
+  font-family: ;
   text-align: justify;
   line-height: 1.3;
   margin-bottom: 1rem;
 }
 .aboutme-img {
   width: 500px;
-  background-color: black;
   border-radius: 25px;
   box-sizing: border-box;
   grid-area: img;
@@ -316,58 +350,117 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(2, 1fr);
   gap: 25px;
   margin: 50px 125px;
+
+  grid-template-areas:
+    "proj1 proj2 proj3"
+    "proj4 proj5 proj5";
+}
+
+.project {
+  position: relative;
+  min-width: 400px;
+  background-color: #3b3b3b;
+  padding: 25px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 1px, rgba(0, 0, 0, 0.01) 0px 4px 2px,
+    rgba(0, 0, 0, 0.1) 0px 8px 4px, rgba(0, 0, 0, 0.1) 0px 16px 8px,
+    rgba(0, 0, 0, 0.1) 0px 32px 16px;
 }
 
 .project-card {
   display: flex;
+  height: 400px;
   flex-direction: column;
   justify-content: flex-end;
-  height: 400px;
-  width: 400px;
-  padding: 25px;
-  background-color: #3b3b3b;
+}
+
+/* overlay  blur learned from> https://dcode.domenade.com/tutorials/image-hover-text-effect-html-css */
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  outline: solid 1px var(--white);
+  outline-offset: -12px;
+
   border-radius: 25px;
-  box-sizing: border-box;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.card-overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.card-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.card-overlay:hover {
+  opacity: 1;
+}
+
+.card-overlay:hover > * {
+  transform: translateY(0);
+}
+
+.project-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  text-align: justify;
+  margin-bottom: 10px;
 }
 
 .proj-1 {
-  background-image: url(../images/02-portfolio-1.jpg);
-  background-position: center;
+  grid-area: proj1;
+  background-image: url(../images/HoriseonScreenCap.png);
+  background-position: top;
   background-size: cover;
 }
 
 .proj-2 {
+  grid-area: proj2;
   background-image: url(../images/02-portfolio-2.jpg);
   background-position: center;
   background-size: cover;
 }
 .proj-3 {
-  background-image: url(../images/02-portfolio-3.jpg);
-  background-position: center;
+  grid-area: proj3;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-position: left;
   background-size: cover;
 }
 .proj-4 {
+  grid-area: proj4;
   background-image: url(../images/02-portfolio-4.jpg);
   background-position: center;
   background-size: cover;
 }
 .proj-5 {
+  grid-area: proj5;
   background-image: url(../images/02-run-buddy.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
-.proj-6 {
+/* .proj-6 {
+  grid-area: proj6;
   background-image: url(../images/02-portfolio-1.jpg);
   background-position: center;
   background-size: cover;
-}
+} */
 
 /* contact me */
 #contact {
