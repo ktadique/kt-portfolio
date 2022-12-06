@@ -2,7 +2,7 @@
 
 ## Description
 
-[Kirsten T//Web Developer](https://ktadique.github.io/week-1-challenge/) is my portfolio website showcasing my skills as a frontend developer and was created as a part of the EDX Frontend Web Development Bootcamp.
+[Kirsten T//Web Developer](https://ktadique.github.io/kt-portfolio/) is my portfolio website showcasing my skills as a frontend developer and was created as a part of the EDX Frontend Web Development Bootcamp.
 
 My website contains 2 main sections - an 'About me' and a 'Projects/Work' section as well as methods to contact me at the bottom of the website, all accesible using the relevant links on the navigation bar.
 
