@@ -313,6 +313,7 @@ body {
 #about {
   height: 100vh;
   position: relative;
+  background: url("/assets/images/blob-scatter4-fb.png");
   background-image: url(/assets/images/svg/blob-scatter4-haikei.svg);
   background-position: center;
   background-size: cover;
@@ -365,6 +366,7 @@ body {
 #work {
   /* background-color: var(--rainbowgr);
   background-blend-mode: screen; */
+  background: url(/assets/images/blob-scatter2-fb.png);
   background-image: url(/assets/images/svg/blob-scatter2-haikei.svg);
   background-position: center;
   background-size: cover;
@@ -499,12 +501,6 @@ body {
   background-position: center;
   background-size: 100%;
 }
-/* .proj-6 {
-  grid-area: proj6;
-  background-image: url(../images/02-portfolio-1.jpg);
-  background-position: center;
-  background-size: cover;
-} */
 
 /* contact me */
 #contact {
