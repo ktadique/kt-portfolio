@@ -313,7 +313,7 @@ body {
 #about {
   height: 100vh;
   position: relative;
-  background-image: url(/assets/images/blob-scatter4-fb.png);
+  background-image: url(../images/blob-scatter4-fb.png);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -364,9 +364,7 @@ body {
 /* projects*/
 
 #work {
-  /* background-color: var(--rainbowgr);
-  background-blend-mode: screen; */
-  background-image: url(/assets/images/blob-scatter2-fb.png);
+  background-image: url(../images/blob-scatter2-fb.png);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -411,10 +409,10 @@ body {
   color: var(--white);
 }
 
-.project-card:hover {
-  /* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19); */
-}
+/*.project-card:hover {
+   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19); 
+}*/
 
 /* overlay blur learned from> https://dcode.domenade.com/tutorials/image-hover-text-effect-html-css */
 
