@@ -313,7 +313,7 @@ body {
 #about {
   height: 100vh;
   position: relative;
-  background-image: url(../images/blob-scatter4-fb.png);
+  background-image: url("../images/blob-scatter4-fb.png");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -364,7 +364,7 @@ body {
 /* projects*/
 
 #work {
-  background-image: url(../images/blob-scatter2-fb.png);
+  background-image: url("../images/blob-scatter2-fb.png");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
