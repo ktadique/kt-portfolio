@@ -313,8 +313,8 @@ body {
 #about {
   height: 100vh;
   position: relative;
-  background-image: url(/assets/images/svg/blob-scatter4-haikei.svg),
-    url("/assets/images/blob-scatter4-fb.png");
+  background-image: url("/assets/images/blob-scatter4-fb.png"), url(/assets/images/svg/blob-scatter4-haikei.svg)
+    ;
   background-position: center;
   background-size: cover;
 }
@@ -366,10 +366,11 @@ body {
 #work {
   /* background-color: var(--rainbowgr);
   background-blend-mode: screen; */
-  background-image: url(/assets/images/svg/blob-scatter2-haikei.svg),
-    url(/assets/images/blob-scatter2-fb.png);
+  background-image:
+    url("/assets/images/blob-scatter2-fb.png"), url("/assets/images/svg/blob-scatter2-haikei.svg");
   background-position: center;
   background-size: cover;
+  background-r
 }
 
 .work-container {
