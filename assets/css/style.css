@@ -110,6 +110,8 @@ body {
   margin-right: 20px;
 }
 
+/* Underline Effect */
+
 .nav-list a {
   position: relative;
   font-size: 1.5rem;
@@ -169,28 +171,24 @@ body {
   color: var(--white);
 }
 
-.side-socials a:after {
-  content: "";
-  position: absolute;
-  background-color: var(--white);
-  height: 2px;
-  width: 0;
-  left: 0;
-  bottom: -8px;
-  transition: 0.3s;
-}
-
-.side-socials a:hover:after {
-  width: 100%;
-}
-
 .social-column {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 200px;
   gap: 10px;
+}
+
+.social-box svg {
+  width: 28px;
+  height: 28px;
+}
+
+.social-box svg:hover {
+  transition: 0.2s;
+  transform: translateY(-3px);
 }
 
 .social-box {
