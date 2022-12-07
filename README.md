@@ -11,7 +11,7 @@ I have also included a side social bar with some links to my relevant social med
 ## Table of Contents
 
 - [Description](#description)
-- [Portfolio Website Preview](#kirsten-tweb-developer-website-preview)
+- [Portfolio Website Preview](#portfolio-website-preview)
 - [Links](#links)
 
 ## Portfolio Website Preview
