@@ -313,9 +313,10 @@ body {
 #about {
   height: 100vh;
   position: relative;
-  background-image: url("/assets/images/blob-scatter4-fb.png");
+  background-image: url(/assets/images/blob-scatter4-fb.png);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .about-inner {
@@ -365,11 +366,10 @@ body {
 #work {
   /* background-color: var(--rainbowgr);
   background-blend-mode: screen; */
-  background-image:
-    url("/assets/images/blob-scatter2-fb.png"),
+  background-image: url(/assets/images/blob-scatter2-fb.png);
   background-position: center;
-  background-size: cover;
-  background-r
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .work-container {
