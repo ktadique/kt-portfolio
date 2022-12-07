@@ -54,6 +54,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
+
   /* 
   min-height: 100vh;
   display: grid;
@@ -168,6 +169,21 @@ body {
   color: var(--white);
 }
 
+.side-socials a:after {
+  content: "";
+  position: absolute;
+  background-color: var(--white);
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+  transition: 0.3s;
+}
+
+.side-socials a:hover:after {
+  width: 100%;
+}
+
 .social-column {
   display: flex;
   flex-direction: column;
@@ -176,11 +192,6 @@ body {
   height: 200px;
   gap: 10px;
 }
-
-/* .social-columns::after {
-  height: 90px;
-  margin: 0px auto;
-} */
 
 .social-box {
   background-color: none;
@@ -310,6 +321,7 @@ body {
   align-self: flex-start;
 }
 /* about me */
+
 #about {
   height: 100vh;
   position: relative;
@@ -501,6 +513,7 @@ body {
 }
 
 /* contact me */
+
 #contact {
   height: 25vh;
 }
